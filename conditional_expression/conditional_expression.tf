@@ -10,5 +10,5 @@ resource "aws_instance" "dev_db" {
     ami = var.ami_id
     instance_type = var.instance_type_prod
     count = var.istest == false ? 3 : 0
-    
+
 }
